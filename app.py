@@ -67,4 +67,5 @@ def upload_file():
         return send_file(output, as_attachment=True, download_name="processed_data.xlsx", mimetype='application/vnd.openxmlformats-officedocument.spreadsheetml.sheet')
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(host='0.0.0.0', port=10000)
+
